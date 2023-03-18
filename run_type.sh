@@ -19,9 +19,9 @@ $python -u main.py \
         --batch_size $batch_size \
         --max_epoch $max_epoch \
         --with_constrain \
-	      --use_gpu \
+        --use_gpu \
         --gpu_id $gpu_id \
-	      --learning_rate 0.1 \
+        --learning_rate 0.1 \
         --length 50 	
 $python predict.py ./$exp_dir/$exp_name-${line//\//\|}-ori $batch_size 0 $gpu_id
 
